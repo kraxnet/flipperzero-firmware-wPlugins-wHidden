@@ -111,6 +111,15 @@ jobs:
           name: firmware
           path: artifacts
 
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            artifacts/flipper-z-f7-update-*
+            
   compact:
     if: ${{ !startsWith(github.ref, 'refs/tags') }}
     runs-on: [self-hosted,FlipperZeroShell]
