@@ -5,6 +5,7 @@ on:
     branches:
       - dev
       - "release*"
+      - 420
     tags:
       - '*'
   pull_request:
@@ -15,7 +16,7 @@ env:
 
 jobs:
   main:
-    runs-on: [self-hosted,FlipperZeroShell]
+    runs-on: [linux]
     steps:
       - name: 'Decontaminate previous build leftovers'
         run: |
