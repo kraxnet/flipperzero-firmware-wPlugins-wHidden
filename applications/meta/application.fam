@@ -48,6 +48,8 @@ App(
         "APPS_SpectrumAnalyzer",
         "APPS_WAVPlayer",
         "APPS_FlipFrid",
+        "APPS_wifi_deauther",
+        "INTAPP_WiFiScanner",
     ],
 )
 
