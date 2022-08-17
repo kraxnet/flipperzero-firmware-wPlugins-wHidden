@@ -16,7 +16,7 @@ env:
 
 jobs:
   main:
-    runs-on: [linux]
+    runs-on: ubuntu-latest
     steps:
       - name: 'Decontaminate previous build leftovers'
         run: |
